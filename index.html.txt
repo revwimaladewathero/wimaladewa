@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ශ්‍රී සුගත විවේක සේනාසනය</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans Sinhala', sans-serif; line-height: 1.6; }
+        header { background: #8B4513; color: white; padding: 1rem; text-align: center; }
+        nav { background: #D2691E; padding: 1rem; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .gallery img { width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .event-card { background: #FFF8DC; padding: 20px; margin: 10px 0; border-radius: 8px; }
+        footer { background: #8B4513; color: white; text-align: center; padding: 2rem; margin-top: 50px; }
+
+        /* Contact form styles */
+        .contact-form { margin-top: 15px; }
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #D2691E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #a0522d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🙏 ශ්‍රී සුගත විවේක සේනාසනය</h1>
+        <p>සාමය සහ සතුට පතන සුවිසල් භූමිය</p>
+    </header>
+    
+    <nav>
+        <a href="#home">මුල් පිටුව</a>
+        <a href="#about">විහාරය ගැන</a>
+        <a href="#gallery">පින්තූර</a>
+        <a href="#events">පුණ්‍යකර්ම</a>
+        <a href="#contact">සම්බන්ධ වන්න</a>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <h2>සාදරයෙන් පිළිගනිමු</h2>
+            <p>මෙම සේනාසනය ඉතා පුරාණ ඉතිහාසයක් ඇති පුණ්‍ය භූමියකි...</p>
+        </section>
+        
+        <section id="gallery">
+            <h2>📸 පින්තූර ගැලරිය</h2>
+            <div class="gallery">
+                <img src="images/temple1.jpg" alt="විහාර මහා විහාරය">
+                <img src="images/buddha.jpg" alt="බුදු පිළිමය">
+                <img src="images/dana.jpg" alt="දානමය පින්කම">
+                <img src="images/poya.jpg" alt="පොහෝ දින උත්සවය">
+            </div>
+        </section>
+        
+        <section id="events">
+            <h2>📅 පුණ්‍යකර්ම දිනත්තු</h2>
+            <div class="event-card">
+                <h3>වෙසක් පොහෝ උත්සවය</h3>
+                <p>දිනය: 2026 මැයි 15</p>
+                <p>වේලාව: පෙ.ව. 8:00 සිට ප.ව. 5:00 දක්වා</p>
+            </div>
+            <div class="event-card">
+                <h3>දානමය පින්කම</h3>
+                <p>දිනය: සෑම මාසික පොහෝ දිනම</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>📞 සම්බන්ධ වන්න</h2>
+            <p><strong>ලිපිනය:</strong> ශ්‍රී සුගත විවේක සේනාසනය, කු ග 05, දකුණු ඉවුර, මුවන්වැව, ලුණුගම්වෙහෙර</p>
+
+            <div class="contact-form">
+                <label>ඔබගේ දුරකථන අංකය:</label>
+                <input type="tel" placeholder="07XXXXXXXX" required>
+                <button type="submit">යවන්න</button>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2026 ශ්‍රී සුගත විවේක සේනාසනය. සියලු හිමිකම් ආරක්ෂිතයි.</p>
+        <p>සදහම් සුවය සැමටම 🙏</p>
+    </footer>
+</body>
+</html>
